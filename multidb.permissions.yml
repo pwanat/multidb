@@ -1,0 +1,3 @@
+view html orders:
+  title: 'Access HTML Orders'
+  description: 'Allow to access HTML orders'

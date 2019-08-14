@@ -1,0 +1,14 @@
+{
+  "name": "drupal/multidb",
+  "type": "drupal-module",
+  "description": "Multidb Orders Module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/multidb",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/multidb",
+    "source": "http://cgit.drupalcode.org/multidb"
+  },
+  "require": { }
+}

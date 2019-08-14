@@ -1,0 +1,9 @@
+multidb.configuration:
+  title: 'Configuration'
+  route_name: multidb.configuration
+  base_route: multidb.configuration
+
+multidb.apiaccess:
+  title: 'API Access'
+  route_name: multidb.apiaccess
+  base_route: multidb.configuration

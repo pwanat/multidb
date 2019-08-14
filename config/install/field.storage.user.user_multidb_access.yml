@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - multidb
+  module:
+    - user
+id: user.user_multidb_access
+field_name: user_multidb_access
+entity_type: user
+type: boolean
+settings: { }
+module: multidb
+locked: false
+cardinality: 1
+translatable: true
+persist_with_no_fields: true
+custom_storage: false

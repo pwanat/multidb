@@ -1,0 +1,41 @@
+<div class="order-header">
+    <h1>Order {{ id }}</h1>
+    <div class="order-info">
+        <span class="label">company: </span>
+        <span class="value">{{ company }}</span>
+    </div>
+    <div class="order-info">
+        <span class="label">first name: </span>
+        <span class="value">{{ first_name }}</span>
+    </div>
+    <div class="order-info">
+        <span class="label">e-mail: </span>
+        <span class="value">{{ email_address }}</span>
+    </div>
+    <div class="order-info">
+        <span class="label">id: </span>
+        <span class="value">{{ cu_id }}</span>
+    </div>
+</div>
+    <div class="order-details">
+        <h2>Order details</h2>
+        <table class="order-details-table">
+            <thead>
+                <th>Product code</th>
+                <th>Product name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </thead>
+            <tbody>
+                {% for row in order_details  %}
+                    <tr>
+                        <td> {{ row.product_code }} </td>
+                        <td> {{ row.product_name }} </td>
+                        <td>{{ row.quantity|round(2, 'floor') }}</td>
+                        <td>{{ row.unit_price|number_format(2, '.', ' ') }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>

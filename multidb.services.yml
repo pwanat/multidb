@@ -1,0 +1,8 @@
+services:
+  external_db_connection.service:
+      class: Drupal\multidb\ExternalDBConnectionService
+  multidb.access_checker:
+    class: Drupal\multidb\Access\ApiAccessCheck
+    arguments: ['@current_user']
+    tags:
+      - { name: access_check, applies_to: _multidb_api_access_check }

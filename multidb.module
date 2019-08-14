@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains multidb.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function multidb_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the multidb module.
+    case 'help.page.multidb':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Multidb Orders Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function multidb_theme() {
+  return [
+    'multidb' => [
+      'render element' => 'children',
+    ],
+  ];
+}

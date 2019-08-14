@@ -1,0 +1,6 @@
+multidb_host: 'mysql'
+multidb_driver: 'mysql'
+multidb_username: 'northwind'
+multidb_password: 'northwind'
+multidb_port: 3306
+multidb_database: 'northwind'

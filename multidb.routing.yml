@@ -1,0 +1,27 @@
+multidb.json:
+  path: 'api/orders/{order_id}'
+  defaults:
+    _controller: '\Drupal\multidb\Controller\multidbController::getDataJson'
+  methods: [GET]
+  requirements:
+    _multidb_api_access_check: 'TRUE'
+multidb.orders:
+  path: 'orders/{order_id}'
+  defaults:
+    _controller: '\Drupal\multidb\Controller\multidbController::getDataHtml'
+  requirements:
+    _permission: 'view html orders'
+multidb.configuration:
+  path: '/admin/config/services/multidb/settings'
+  defaults:
+    _form: 'Drupal\multidb\Form\multidbConfiguration'
+    _title: 'Multidb API Access'
+  requirements:
+    _permission: 'administer site configuration'
+multidb.apiaccess:
+  path: '/admin/config/services/multidb/apiaccess'
+  defaults:
+    _form: 'Drupal\multidb\Form\apiAccessForm'
+    _title: 'Multidb API Access'
+  requirements:
+    _permission: 'administer site configuration'

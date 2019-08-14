@@ -1,0 +1,5 @@
+multidb.configuration:
+  route_name: multidb.configuration
+  title: 'Multidb Configuration'
+  description: 'Multidb Configuration'
+  parent: system.admin_config_services

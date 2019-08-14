@@ -1,0 +1,5 @@
+name: 'multidb'
+type: module
+description: 'Multidb Orders Module'
+core: 8.x
+package: 'Custom'
